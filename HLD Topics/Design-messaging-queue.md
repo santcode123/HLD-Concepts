@@ -1,0 +1,1 @@
+i have basic idea of messaging queue and how does it work and why we needed it at first place, so revise this again for better understanding.

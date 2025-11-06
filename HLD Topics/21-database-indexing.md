@@ -1,0 +1,1 @@
+Note: we have gone through basics only, will cover in depth later
