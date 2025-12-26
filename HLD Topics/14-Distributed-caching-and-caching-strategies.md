@@ -1,7 +1,9 @@
 ## Distributed Caching and Caching Strategies
 
-Caching is the machnism in which we store most frquestly used data in the in memory instead of hard disk or database, while storing data in the cache we mention the TTL (time to live duration for each data).
+Caching is the machanism in which we store most frquestly used data in the in memory instead of hard disk or database, while storing data in the cache we mention the TTL (time to live duration for each data).
 Caching approach help for fast data read and help to reduce request latency. sometimes caching help to overcome fault tolerance in some cases based on implementation.
+
+Note: we can access data from cache in 2-3 ms, where data base retrival can take 50ms
 
 
 There are many Caching Strategies that we will discuss in this chapter.
@@ -58,6 +60,12 @@ Advantage:
 disadvantage: 
 there is some rare case, if db is down for long time and cache Time to live(TAT) has been expired so data will be removed from
 the cache and will not able to write once db is up, so for future request the data will be lost.
+
+#### When we should propose caching
+first we need to figure out the problems we are facing like, latency, or data base frequenct request for rarely changed resources then we need to think of caching, give cache aside strategies by default until interviewer asks specific strategies
+
+
+Note: Thundering herd can happen if so many request misses the cache and hit directly the db, in different selection we will cover thundering herd problem
 
 
 
