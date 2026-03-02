@@ -13,7 +13,7 @@ Primary Key vs Composite Key
 
 Surrogate keys (UUID, Snowflake ID) vs Natural keys
 
-Foreign keys (when to use vs avoid)
+Foreign keys (when to use vs avoid), also how to define deletion behaviour
 
 Soft delete vs hard delete
 
@@ -76,20 +76,13 @@ EXISTS vs IN
 
 Anti-joins (NOT EXISTS)
 
-Advanced
-
-Join order optimization
-
-Join on indexed columns
-
-
-4️⃣ Transactions & Concurrency Control (VERY IMPORTANT)
+4️⃣ Transactions & Concurrency Control (VERY IMPORTANT) => we have covered it in system design section
 
 Frequently asked in backend + system design interviews.
 
 Must know
 
-ACID properties
+ACID properties (automacity, consistency, Isolation, Durability)
 
 Transaction lifecycle (BEGIN, COMMIT, ROLLBACK)
 
@@ -148,7 +141,7 @@ Why relying only on application-level validation is dangerous.
 
 Very practical backend topic.
 
-Must know
+Must know: orderby, where
 
 Offset-based pagination (LIMIT + OFFSET)
 
@@ -184,7 +177,7 @@ Often overlooked but senior-level expected.
 
 Must know
 
-SQL Injection (how prepared statements prevent it)
+SQL Injection (how prepared statements prevent it) (use paramaterized query)
 
 Least privilege principle
 
@@ -193,3 +186,31 @@ Avoiding SELECT *
 Handling PII data
 
 Encryption at rest vs in transit
+
+List down some keys that are important to solve some sql question also try to solve 5 question from leetcode 2 medium and 3 hard.
+
+Important key words:
+select,
+alias of column name and table name
+joins
+order by,
+group by,-> when we want to group rows based on some column, and apply some aggregation function on each group.
+
+having-> applied for group by 
+some of the important aggregator function: AVG, SUM, COUNT, MIN,MAX
+
+when to use distinct key word in sql
+
+SUBSTRING in sql
+
+CONCAT or  ||  or + used for sgtring contacting
+
+use case in sql
+
+COALESCE in sql: get first not null values from column
+
+window function and give an example of
+
+what is CTE in sql
+
+what is with in sql
