@@ -26,8 +26,7 @@
 
 6. CDN (content delivery Network): 
    i. uses a distributed  Network of server to cache the static resources like html page, images, video which do not change frequenctly.
-   ii. whenver user try to access the website , nearest cdn will check for corresponding html , if cdn has that html will be returened to the 
-   user.
+   ii. whenver user try to access the website , nearest cdn will check for corresponding html , if cdn has that html will be returened to the user. (please check once shall we cache html or not, according to me it's not recommended otherwise we will not see updates in the web applications)
    iii. in case of cache miss, cdn asks it's nearest cdn for the resources.
 
 
@@ -45,8 +44,7 @@
   c. topic: wild comparision, can send message to more than one queue
 
 9. database scaling.
-   i. vertical scaling: add more CPU and RAM to the existing server to handle more requests, but each physical server has their own limits so we
-   can not scale it after certain peek point.
+   i. vertical scaling: add more CPU and RAM to the existing server to handle more requests, but each physical server has their own limits so we can not scale it after certain peak point.
    ii. horizontal scaling: we add Multiple db server and use the sharding technology to distribute the data amoung the shards, but there will be some difficulties while doing join and all.
 
    if we want data from different shards we can put logic of merging shards data at application level.

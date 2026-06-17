@@ -1,5 +1,5 @@
 #### Idempotency 
-Defination: idemptecy is a term which states that multiple (duplicate requests) should not have any side effect on server, which means calling one api one time and multiple times has same result.
+Defination: idempotecy is a term which states that multiple (duplicate requests) should not have any side effect on server, which means calling one api one time and multiple times has same result.
 
 GET, DELETE, PUT are idempotent by nature, you can think and understand why there are idempotent
 but post request is not idempotent by nature, so we need to think in our implementation do we need to make post idempotent reqest or not , in general we do not need to make it idempotent, but when we implement retry machanism we need to think of idemotency.

@@ -1,7 +1,6 @@
 #### Back of the envelope estimation
 
-   Introduction:  in the estimation we do the rough calculation and find out the RAM, Servers and Db requirments so it's better to do
-   rough  calculation before starting the system design iteself.
+   Introduction:  in the estimation we do the rough calculation and find out the RAM, Servers and Db requirments so it's better to do rough calculation before starting the system design iteself.
 
    Note: do not invest much time on the calculation part itself.
 

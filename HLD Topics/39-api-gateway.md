@@ -4,7 +4,7 @@
 
 What is difference between availability zone, region and data center
 
-In could based infrastructure, ccompanies setup their data center at multiple places, in one region (location) they have multiple physical places where machines are there, those section are called availability zone, each availability zone has their own electricity power, you can say that availability zones are data center.
+In cloud based infrastructure, companies setup their data center at multiple places, in one region (location) they have multiple physical places where machines are there, those section are called availability zone, each availability zone has their own electricity power, you can say that availability zones are data center.
 
 Below are the list of functionality that api gateway provides\
 

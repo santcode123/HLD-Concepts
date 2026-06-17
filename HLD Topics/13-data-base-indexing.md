@@ -3,7 +3,7 @@
 ##### Let's understand how data is being stored in disk
 when we say that we are storing data in db it's nothing but storing data in disk storage(permanent storage), DBMS is responsible for managing data retrival and writing in disk. DBMS creates data pages in which we divide huge data in to chunks and store in the data block.
 
-each data page has three components
+Each data page has three components
 1. header -> contains details like how much free space is availale, page number etc
 2. data storage -> storage the actual data
 3. offset -> contains a offset array which keeps the order of row based on clustered index
@@ -41,3 +41,5 @@ create table users(
 
 create index user_age on users(age);
 ```
+
+Note: due to indexing write might be slow since we need to update B+ tree as well to maintain indexing orders.

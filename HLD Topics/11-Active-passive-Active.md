@@ -22,7 +22,7 @@ In this architecture we have multi master database each data center can write th
 
 props:
 1. good when we want scale our system for millions of user's
-2. more resiliant than active -passive architecture as in active -passive down time is more compare to active-active, as in \
+2. more resiliant than active-passive architecture as in active -passive down time is more compare to active-active, as in \
 active-passive we need to select master db after primary data center is down.
 
 

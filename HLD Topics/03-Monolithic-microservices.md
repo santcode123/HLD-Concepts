@@ -24,8 +24,6 @@ Disadvantages of microservices:
 
 3. Transaction managment complexity: suppose one client request came that involves two services db and one service db transaction failed, and one service db got success, no we need to roll back success txn db as well to maintain ACID properties.
 
-
-
 Microservices decomposition rules
  1. decomposition based on business 
  2. decomposition based on modules.
@@ -41,8 +39,7 @@ monolithic and microservice based on requiredments, gradully we will increase th
 Disadvantages of shared database approach: 
 1. we can not scale based on micro service level, need to scale whole db 
 2. we want to change in db schema according to once mirco service then we need to take of other services depedency on that table.
-3. Performace bottleneck: as all the services will use same database then some operations might take time because  a lot of request needs to be
-handled by the db.
+3. Performace bottleneck: as all the services will use same database then some operations might take time because  a lot of request needs to be handled by the db.
 
 Advantages of shared Database approach: 
 1. we can main ACID properties in one txn(easy)
@@ -55,12 +52,9 @@ Advantages of individuals database approach:
 
 
 #### SAGA Principle(Managing transaction in distributed systems)
-1. choregraphy saga pattern: it is a event driven architecture, each services communicate via events, it becomes complex if we have so many
-micro services which needs to communicate each other.
-2. Orchestration: there will be central orchestrator that will be reposible for each transaction, every request will go through it and it decides 
-when to rollback and commit the changes (compesate the txn).
+1. choregraphy saga pattern: it is a event driven architecture, each services communicate via events, it becomes complex if we have so many micro services which needs to communicate each other.
+2. Orchestration: there will be central orchestrator that will be reposible for each transaction, every request will go through it and it decides when to rollback and commit the changes (compesate the txn).
 
 
 #### CQRS Pattern(command Query resposiibilty segregation) ( used of fetching data from multiple tables presents in multiple dbs).
-1. in this pattern one more db is created which contains all the microservices data and stay in sync whenver some changes happens in micro services
-databases. this common db is used for read purpose.
+1. in this pattern one more db is created which contains all the microservices data and stay in sync whenver some changes happens in micro services databases. this common db is used for read purpose.

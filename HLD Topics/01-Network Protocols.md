@@ -48,3 +48,5 @@ Note WebRTC uses UDP/IP transaport layer for communication.
 Diff: inside the post api we can do validation and more, but inside the put we just create or update for given url request so we need to send enough data to server for put request to support upinsertion and create operations.
 
 Put is idempotent but post is not idempotent by nature, multiple put request will end up creating one record only, we need to pass the id in the put requrest.
+
+Patch: when we need to update the record partially.
